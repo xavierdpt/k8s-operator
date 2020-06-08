@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+export GOPATH="$PWD/gopath"
+export GOROOT="/usr/lib/golang"
+export GOPROXY="https://proxy.golang.org,direct"
+cd myoperator
+../bin/operator-sdk build myoperator:v0.0.1 --verbose

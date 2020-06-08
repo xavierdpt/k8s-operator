@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+ls myoperator/deploy/crds/myoperator_mycrds_crd.yaml 
+# oc create -f myoperator/deploy/crds/myoperator_mycrds_crd.yaml 

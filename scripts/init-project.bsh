@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+#export PATH="$PWD/scripts/hack:$PATH"
+export GOROOT="/usr/lib/golang"
+export GOPATH="$PWD/gopath"
+export GOPROXY="https://proxy.golang.org,direct"
+mkdir -p gopath
+./bin/operator-sdk new myoperator --repo=myrepo/myoperator --verbose --vendor=true
